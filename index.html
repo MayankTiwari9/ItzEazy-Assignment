@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Progress Bar Demo</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+  <div class="question active" id="question1">
+    <h3>Question 1: First Name</h3>
+    <input type="text" class="answer" data-min-length="3" placeholder="Enter at least 3 characters">
+    <h3>Question 2: Last Name</h3>
+    <input type="text" class="answer" data-min-length="3" placeholder="Enter at least 3 characters">
+  </div>
+
+  <div class="question" id="question2">
+    <h3>Question 3: Gender</h3>
+    <select class="answer">
+      <option value="">Select an option</option>
+      <option value="option1">Male</option>
+      <option value="option2">Female</option>
+      <option value="option2">Others</option>
+    </select>
+
+    <h3>Question 4: Maritial Status</h3>
+    <select class="answer">
+      <option value="">Select an option</option>
+      <option value="option1">Married</option>
+      <option value="option2">Single</option>
+    </select>
+  </div>
+
+  <div class="question" id="question3">
+    <h3>Question 5: Nationality</h3>
+    <label><input type="radio" class="answer" name="radio" value="option1"> Indian</label><br>
+    <label><input type="radio" class="answer" name="radio" value="option2"> Non - Indian</label>
+  </div>
+
+  <div class="progress-container">
+    <div class="progress-bar" id="progress-bar">0%</div>
+  </div>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+body {
+  font-family: Arial, sans-serif;
+}
+.container {
+  width: 80%;
+  margin: 20px auto;
+}
+.question {
+  display: none;
+}
+.question.active {
+  display: block;
+}
+.progress-container {
+  margin-top: 20px;
+  height: 20px;
+  background-color: #f5f5f5;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.progress-bar {
+  height: 100%;
+  line-height: 20px;
+  background-color: #4CAF50;
+  text-align: center;
+  color: white;
+  transition: width 0.3s ease-in-out;
+}
